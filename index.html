@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="tool-section">
+            <button id="pencil" class="tool active">✏️ Pencil</button>
+            <button id="line" class="tool">📏 Line</button>
+            <button id="rectangle" class="tool">⬜ Rectangle</button>
+            <button id="circle" class="tool">⭕ Circle</button>
+            <button id="triangle" class="tool">📐 Triangle</button>
+            <button id="eraser" class="tool">🧹 Eraser</button>
+            <button id="clear" class="tool">🗑️ Clear All</button>
+        </div>       
+        <div class="tool-section">
+            <input type="color" id="colorPicker" value="#000000">
+            <select id="brushSize">
+                <option value="1">1px</option>
+                <option value="3">3px</option>
+                <option value="5" selected>5px</option>
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+                <option value="20">20px</option>
+            </select>
+            <label class="fill-option">
+                <input type="checkbox" id="fillShape">
+                Fill Shape
+            </label>
+        </div>
+        <div class="tool-section">
+            <button id="save" class="tool">💾 Save</button>
+            <button id="load" class="tool">📂 Load</button>
+            <button id="voiceNote" class="tool">🎤 Voice Notes</button>
+        </div>
+    </div>
+    <canvas id="whiteboard"></canvas>
+    <script src="script.js"></script>
+</body>
+</html> 
+
